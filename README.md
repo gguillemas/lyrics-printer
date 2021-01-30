@@ -1,6 +1,6 @@
 # Lyrics Printer
 
-Lyrics Printer is a set of scripts to download and format lyrics for printing.
+Lyrics Printer is a set of scripts to download and format song lyrics for printing.
 
 ## Usage
 
@@ -8,7 +8,7 @@ Here is an example of a typical usage:
 
 ```
 # Installs required dependencies.
-/.setup.sh
+./setup.sh
 
 # Example songlist in the required CSV format.
 echo << EOF > songlist.csv
