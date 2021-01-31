@@ -1,12 +1,12 @@
 # Lyrics Printer
 
-Lyrics Printer is a set of scripts to download and format song lyrics for printing. These scripts are mainly for my personal use and have very little validation and error handling. Feel free to use them at your own expense.
+Lyrics Printer is a set of scripts to download and format song lyrics for printing. These scripts are for my personal use and have very little validation and error handling. Feel free to use them at your own expense.
 
 The expected input is a semicolon-separated CSV file containing song title, artist, transposition, capo position and chords, which will be included with the printable lyrics. A sample `songlist.csv` file is supplied for convenience.
 
 ## Usage
 
-Here is an example of a typical usage:
+Here is a typical usage example:
 
 ```
 # Installs required dependencies.
@@ -23,7 +23,9 @@ export GENIUS_ACCESS_TOKEN="<YOUR GENIUS CLIENT ACCESS TOKEN>"
 
 # Optionally, merge all PDF files into one.
 pdftk output/*.pdf cat output songbook.pdf
-````
+```
+
+If the download exits prematurely because of an error (usually because the song is not found in Genius by the supplied title and artist strings) the download can be resumed from the offending song after the pertinent modifications by using the `-s` flag with the line number of the song in the CSV file minus two. More information by running `./download-lyrics.sh -h`.
 
 ## Acknowledgements
 
