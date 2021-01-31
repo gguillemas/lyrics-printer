@@ -25,7 +25,14 @@ export GENIUS_ACCESS_TOKEN="<YOUR GENIUS CLIENT ACCESS TOKEN>"
 pdftk output/*.pdf cat output songbook.pdf
 ```
 
-If the download exits prematurely because of an error (usually because the song is not found in Genius by the supplied title and artist strings) the download can be resumed from the offending song after the pertinent modifications by using the `-s` flag with the line number of the song in the CSV file minus two. More information by running `./download-lyrics.sh -h`.
+If the download exits prematurely because of an error (usually because the song is not found in Genius by the supplied title and artist strings) the download can be resumed from the offending song after the pertinent modifications by using the `-s` flag with the line number of the song in the CSV file minus two. More information:
+
+```
+Usage: ./download-lyrics.sh [-h] [-d] [-s NUMBER] input_file [output_dir]
+  -s NUMBER  Skip downloading the first NUMBER songs
+  -d         Run in dry run mode to verify songs before download
+  -h         Show this usage message
+```
 
 ## Acknowledgements
 

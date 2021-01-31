@@ -5,12 +5,12 @@ set -e
 usage() {
   echo "Usage: $0 [-h] [-d] [-s NUMBER] input_file [output_dir]"
   echo "  -s NUMBER  Skip downloading the first NUMBER songs"
-  echo "  -d         Run in dry-run mode to verify songs before download"
+  echo "  -d         Run in dry run mode to verify songs before download"
   echo "  -h         Show this usage message"
 }
 
 skip=2
-while getopts 'ds:' flag; do 
+while getopts 'hds:' flag; do 
   case ${flag} in
     d) dry=1 ;;
     s) skip=${OPTARG}; echo "Skipping first $skip songs." ;;
