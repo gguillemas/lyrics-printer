@@ -26,10 +26,11 @@ export GENIUS_ACCESS_TOKEN="<YOUR GENIUS CLIENT ACCESS TOKEN>"
 
 # Generates intermediate Markdown and PDF files for printing.
 ./format-lyrics.sh output/ output/
-````
 
-This will generate JSON files for each song containing lyrics and metadate, intermediate Markdown files containing the print information for the lyrics sheet and a final PDF file containing the lyrics for printing.
+# Optionally, merge all PDF files into one.
+pdftk output/*.pdf cat output songbook.pdf
+````
 
 ## Acknowledgements
 
-These scripts rely on [LyricsGenius](https://github.com/johnwmillr/LyricsGenius) to download the lyrics and [Pandoc](https://pandoc.org/) to print them.
+These scripts rely on [LyricsGenius](https://github.com/johnwmillr/LyricsGenius) to download the lyrics from the [Genius API](https://genius.com/api-clients) and [Pandoc](https://pandoc.org/) to print them.

@@ -1,7 +1,13 @@
 #!/bin/bash
 
+set -e
+
+utf8_to_ascii() {
+  perl -CSD -pe "s/[^\p{Word}\p{Punct}\p{Symbol}\p{Mark}\p{PerlSpace}]//gu" | konwert utf8-ascii
+}
+
 if [ $# -ne 2 ]; then
-  echo "Usage: $0 input_file output_dir"
+  echo "Usage: $0 input_dir output_dir"
   exit 1
 fi
 
@@ -12,8 +18,11 @@ echo $input
 echo $output
 
 for file in $input/*.json; do
-  title=$(cat $file | jq -r '.title' | perl -CSD -pe "s/[^\p{ASCII}]//gu")
-  artist=$(cat $file | jq -r '.artist' | perl -CSD -pe "s/[^\p{ASCII}]//gu")
+  title=$(cat $file | jq -r '.title' | utf8_to_ascii )
+  artist=$(cat $file | jq -r '.artist' | utf8_to_ascii )
+  transp=$(cat $file | jq -r '.transp' | utf8_to_ascii )
+  capo=$(cat $file | jq -r '.capo' | utf8_to_ascii )
+  chords=$(cat $file | jq -r '.chords' | utf8_to_ascii )
 
   cat << EOF > "$output/$title - $artist.md"
 ---
@@ -21,13 +30,13 @@ papersize: a4
 documentclass: article 
 fontsize: 12pt
 fontfamily: charter
-linestretch: 0.5
+linestretch: 0.8
 header-includes:
     - \usepackage{multicol}
     - \usepackage[utf8]{inputenc}
-    - \usepackage[a4paper, margin=3.5cm, headsep=0cm]{geometry}
+    - \usepackage[a4paper, margin=2.6cm, headsep=1pt]{geometry}
     - \setlength{\columnsep}{20pt}
-    - \setlength{\parskip}{0.5em}
+    - \setlength{\parskip}{0.2em}
     - \newcommand{\hideFromPandoc}[1]{#1}
     - \hideFromPandoc{
         \let\Begin\begin
@@ -42,11 +51,19 @@ $title
 $artist
 --------------
 
-###
+#####
 
 \Begin{multicols}{2}
 
-$(cat $file | jq -r '.lyrics' | sed -z 's/\n\n/\n#### \n/g' | sed -z 's/\n/\n\n/g' | perl -CSD -pe "s/[^\p{ASCII}]//gu")
+**Transposed:** $transp | **Capo:** $capo
+
+**Chords:**
+
+$(echo $chords | sed -z 's/ \/ /\n\n/g')
+
+#####
+
+$(cat $file | jq -r '.lyrics' | sed -z 's/\n\n/\n##### \n/g' | sed -z 's/\n/\n\n/g' | utf8_to_ascii )
 
 \End{multicols}
 EOF
