@@ -10,14 +10,6 @@ Here is an example of a typical usage:
 # Installs required dependencies.
 ./setup.sh
 
-# Example songlist in the required CSV format.
-echo << EOF > songlist.csv
-You Give Me Something;James Morrisson
-You Know My Name;Chris Cornell
-You Were Meant For Me;Jewel
-Youth;Daughter
-EOF
-
 mkdir output
 
 # Downloads the song lyrics and metadata from Genius.
