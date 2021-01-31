@@ -14,8 +14,7 @@ fi
 input="$1"
 output="$2"
 
-echo $input
-echo $output
+echo "Reading from \"$input\" and writing to \"$output\"."
 
 for file in $input/*.json; do
   title=$(cat $file | jq -r '.title' | utf8_to_ascii )
