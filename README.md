@@ -2,7 +2,7 @@
 
 Lyrics Printer is a set of scripts to download and format song lyrics for printing. These scripts are mainly for my personal use and have very little validation and error handling. Feel free to use them at your own expense.
 
-The expected input is a semicolon-separated CSV file containing song title, artist, semitones of transposition, capo position and chords, which will be included in the printable lyrics file. A sample `songlist.csv` file is supplied for convenience.
+The expected input is a semicolon-separated CSV file containing song title, artist, transposition, capo position and chords, which will be included with the printable lyrics. A sample `songlist.csv` file is supplied for convenience.
 
 ## Usage
 
