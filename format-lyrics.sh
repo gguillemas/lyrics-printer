@@ -28,13 +28,13 @@ for file in $input/*.json; do
 papersize: a4
 documentclass: article 
 fontsize: 12pt
-fontfamily: charter
-linestretch: 0.8
+fontfamily: libertine 
+linestretch: 1.0
 header-includes:
     - \usepackage{multicol}
     - \usepackage[utf8]{inputenc}
-    - \usepackage[a4paper, margin=2.6cm, headsep=1pt]{geometry}
-    - \setlength{\columnsep}{20pt}
+    - \usepackage[a4paper, margin=2.0cm, headsep=1pt]{geometry}
+    - \setlength{\columnsep}{24pt}
     - \setlength{\parskip}{0.2em}
     - \newcommand{\hideFromPandoc}[1]{#1}
     - \hideFromPandoc{
@@ -50,8 +50,6 @@ $title
 $artist
 --------------
 
-#####
-
 \Begin{multicols}{2}
 
 **Transposed:** $transp | **Capo:** $capo
@@ -60,16 +58,16 @@ $artist
 
 $(echo $chords | sed -z 's/ \/ /\n\n/g')
 
-#####
+\ 
 
-$(cat $file | jq -r '.lyrics' | sed -z 's/\n\n/\n##### \n/g' | sed -z 's/\n/\n\n/g' | utf8_to_ascii )
+$(cat $file | jq -r '.lyrics' | sed -z 's/\n\n/\n\\ \n/g' | sed -z 's/\n/\n\n/g' | utf8_to_ascii )
 
 \End{multicols}
 EOF
 
   echo "Wrote lyrics to: $output/$title - $artist.md"
 
-  pandoc "$output/$title - $artist.md" -o "$output/$title - $artist.pdf"
+  pandoc --wrap=preserve "$output/$title - $artist.md" -o "$output/$title - $artist.pdf"
   
   echo "Printed lyrics to: $output/$title - $artist.pdf"
 done
