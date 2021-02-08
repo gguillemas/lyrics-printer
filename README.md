@@ -1,8 +1,10 @@
 # Lyrics Printer
 
-Lyrics Printer is a set of scripts to download and format song lyrics for printing. These scripts are for my personal use and have very little validation and error handling. Feel free to use them at your own expense.
+Lyrics Printer is a set of scripts to download and format song lyrics for printing. 
 
-The expected input is a semicolon-separated CSV file containing song title, artist, transposition, capo position and chords, which will be included with the printable lyrics. A sample `songlist.csv` file is supplied for convenience.
+The expected input is a semicolon-separated CSV file containing song title, artist, transposition, capo position and chords. A sample `songlist.csv` file is supplied for convenience. Running the scripts as shown below will result in a single PDF file (`Songbook.pdf`) containing lyrics for each of the songs along with the supplied chords and performance information.
+
+These scripts were developed for my own use and have very little validation and error handling.
 
 ## Usage
 
@@ -18,20 +20,31 @@ mkdir output
 export GENIUS_ACCESS_TOKEN="<YOUR GENIUS CLIENT ACCESS TOKEN>"
 ./download-lyrics.sh songlist.csv output/
 
-# Generates intermediate Markdown and PDF files for printing.
-./format-lyrics.sh output/ output/
+# Generates the songbook with your name in the cover.
+./format-lyrics.sh -a "John Doe" output/
 
-# Optionally, merge all PDF files into one.
-pdftk output/*.pdf cat output songbook.pdf
+# Preview songbook with your preferred application.
+xdg-open Songbook.pdf
 ```
 
-If the download exits prematurely because of an error (usually because the song is not found in Genius by the supplied title and artist strings) the download can be resumed from the offending song after the pertinent modifications by using the `-s` flag with the line number of the song in the CSV file minus two. More information:
+If the download exits prematurely because of an error (usually because the song is not found in Genius by the supplied title and artist strings) the download can be resumed from the offending song after the pertinent modifications by using the `-s` flag with the line number of the song in the CSV file minus two. More detailed usage information below.
+
+Usage information for `download-lyrics.sh`:
 
 ```
 Usage: ./download-lyrics.sh [-h] [-d] [-s NUMBER] input_file [output_dir]
   -s NUMBER  Skip downloading the first NUMBER songs
   -d         Run in dry run mode to verify songs before download
   -h         Show this usage message
+```
+
+Usage information for `format-lyrics.sh`:
+
+```
+Usage: format-lyrics.sh [-h] [-i] [-a author] [-k output_dir] input_dir
+  -k OUTPUT_DIR  Keep temporary files in directory
+  -a AUTHOR      Name of author to put on the cover
+  -h             Show this usage message
 ```
 
 ## Acknowledgements
