@@ -1,10 +1,10 @@
-Title;Artist;Transposition;Capo;Chords
 A Thousand Miles;Vanessa Carlton;0;4;Cadd9 D G Cadd9 / 3x(Cadd9 G D) Em Cadd9 D / 3x(Cadd9 D G Cadd9) Em Cadd9 D / Em D G Am7
 Ain't Nobody (45 Version);Chaka Khan;-5;0;2x(Bm A) 2x(G A) / F#m A G A Bm / Bm A Em G
 Alfonsina y el Mar;Mercedes Sosa;0;0;Dm E7 2xAm C B7 2xEm (Am D G Am Em B7) 2xE7 (Am D G Am Em B7) 2xEm / Am D 2xG Dm E7 2xAm C 2xEm B7 2xE 2xAm 2xEm F# B7 Em
+Always Be My Baby;Mariah Carey;-7;0;A E F#m7 E D Bm 2xE / 2xA D E F#m7 D Bm E / F#m B D Bbm F#m B D E Fdim / 2xA# Eb F Gm Eb Cm F
 Baby One More Time;Britney Spears;-3;0;Am E C Dm E / G Am E C Dm E F G F Dm E
-Beautiful;Christina Aguilera;-3;0;B A G#m G / 2x(E C#m B A E) C#m B / B A G#m G
 Beautiful Soul;Jesse McCartney;0;0;A E F#m D F#m E A D / A E F#m D / F#m E A D
+Beautiful;Christina Aguilera;-3;0;B A G#m G / 2x(E C#m B A E) C#m B / B A G#m G
 Because Of You;Kelly Clarkson;-7;0;3x(D A Bm G) D A G A / 3x(Bm G A) A Bm A / Bm G A
 Because Of You;Ne-Yo;-1;0;G A Bm
 Bed I Made;Allen Stone;0;4;C Dm7 Em7 E7 Am7 Dm7 C C Dm7 Em7 E7 Am7 Dm7 G7 / 3x(F E7 Am7) Dm G7 C / 2x(Dm G7) Dm Em A G7
@@ -19,6 +19,7 @@ Broken Strings;James Morrisson;1;0;2x(Bm D G) Em / G A Bm 2x(G A F#m) G D / 2x(E
 Bubbly;Colbie Caillat;0;0;A Amaj7 D A / C#m D E Bm
 Bye Bye Bye;NSYNC;0;0;3xG#m [F# C#m E] / 2x(E F#) 2x(G#m F# E [C#m F#]) / 8xG#m 2x(G#m F# E [C#m F#])
 Can't Fight The Moonlight;LeAnn Rimes;-5;0;F#m Bm E D / 2x(Bm A) D D7 / 2x(Gm Cm F Eb D ) Cm D D7
+Ciao Adios;Anne-Marie;-5;0;Bm D A G
 Cool Girl;Dodie;-5;0;G A Bm A
 Copenhague;Vetusta Morla;0;0;2x(Bm A) / F#m D A E F#m D 3x(D A E) Bm A E F#m
 Crazy in Love;Beyoncé feat. Jay-Z;-5;0;Am F Dm E
@@ -31,8 +32,8 @@ Dancing On My Own;Calum Scott;-2;0;B F# E / G#m F# 2xE / 2x(B F# E) 2x(G#m F# E)
 Deeper;Ella Eyre;-4;0;Em D Bm C
 Don't Dream It's Over;Crowded House;0;0;D# Cm G# G / 3x(G# A# D# Cm) G#
 Don't Know Why;Norah Jones;-3;0;Gmaj7 G7 Cmaj7 B Em7 A7 D7 G / Em7 A7 D D7 Em7 A7 2xD7 G D
-Dreams;Fleetwood Mac;-4;0;D E
 Dreams (7" Mix);Gabrielle;0;0;Dmaj7 A F#m E
+Dreams;Fleetwood Mac;-4;0;D E
 Easy;Commodores;0;1;G Bm7 Am7 / 3x(G Bm7 Am7) F C G / 3x(Fmaj7 Dm7) Bb F Bb C
 Easy;Mac Ayres;0;0;Fmaj7 F7 2xD7 Gm7 C7 Fmaj7 / Fmaj7 Dbmaj7 Ebmaj7 Fmaj7 Dbmaj7 [Ab7 Bb7] C7 / Gm7 C7 Fmaj7 [Bbmaj7 Am7] Abm7 Gm7 C7 Fmaj7 D7 Gm7 C7 Fmaj7 [Bbmaj7 Am7] Abm7 Gm7 Bbm7
 Everything Burns;Ben Moody ft. Anastacia;0;0;Bm A F#m G / F# / Bm G Em A
@@ -50,6 +51,7 @@ Gravity;John Mayer;0;0;G C / 2xAm7 2xD7 Gm Ebmaj7 D7
 Hallelujah;Jeff Buckley;0;0;2x(C Am) F G C G C F G Am F G E7 Am / F Am F C G C
 Harder to Breathe;Maroon 5;-2;0;7x(Bm [F#m]) 2xBm / 3x(Bm F#m A Em) 2x(Bm F# Bm) / 3x(Bm Gmaj7) Bm
 Hero;Mariah Carey;-5;0;2xC Am G C A# Ab G / C Am G F Em Dm C 2xC Am G F Dm G C / 3x(Ab D# A#) Ab D# F
+Hey There Delilah;Plain White T's;0;0;2x(D F#m) Bm [A] G A Bm A / 2x(D Bm) [A] 2x(D Bm) D / 2x(G A D Bm) G A 2xBm A
 How to Save a Life;The Fray;0;0;A# F Gm F / 2x(D# F Gm A#) F A#
 Howl;Florence + The Machine;-7;0;Gm F D# / F D# / Gm F D# / Gm F D# / F Gm D# D
 I Believe I Can Fly;R. Kelly;0;0;C Fm / Am Fm C G / C Am7 Dm G Am Fm C Fm Am
@@ -73,8 +75,8 @@ Lay It Down;Allen Stone;0;0;C#m B G#m7 F#m7 / A B / E G#7 A Am E B Am / Am D E A
 Let Me Love You;Mario;0;0;Cm7 Gm7 2xF / Cm7 Gm7 2xF / Abmaj7 Ebmaj7 Gbmaj7 Dbmaj7 Abmaj7 Ebmaj7 Gbmaj7 B
 Locked Out Of Heaven;Bruno Mars;-5;0;[G] Am [G] F [Em] Dm / [G] Am [G] F [Em] Dm C E7 / F Dm C G / F Dm C G
 Long Distance Call;Phoenix;0;0;C Am G F Am G / 2xDm F Dm 2xC 2xCmaj7 2xDm F Dm
-Love on the Brain;Rihanna;-5;0;D Em Bm A / C G D C G A / D Em Bm A
 Love on Top;Beyoncé;-7;0;F G Dm A# / A# 2xC Dm7 A# 2xC [A#] C / 2x(F G Dm A#) F / G Dm A# F G Dm A#
+Love on the Brain;Rihanna;-5;0;D Em Bm A / C G D C G A / D Em Bm A
 Make You Feel My Love;Adele;-3;0;G D F C Cm G [A7 D7] G / C G B7 2x(C G) A7 D7
 My Heart Will Go On;Celine Dion;-4;0;C G F C G C G F G / 2x(Am G F G) C
 My Immortal;Evanesence;-5;0;E G#m / 3x(C#m G#m) B / 3x(C#m A B G#m) C#m A B 2x(E G#m) / A C#m B A F#m G#m A B C#m
@@ -83,6 +85,7 @@ No One;Alicia Keys;-7;0;A E F#m D E
 No Tears Left To Cry;Ariana Grande;4;4;Am G F G
 Nothing;Jeremy Passion;2;0;Bmaj7 Cdim7 C#m7 C#m7b5 / D#m7 D#m7/A# Amaj7
 Older;Sasha Sloan;-3;0;A D F#m E / 3x(D E A [E] F#m) 2xD 2xA
+Out of Reach;Gabrielle;-3;0;2x(A F#m E D) F#m7 E D E7 / A F#m E D / A F#m E D A F#m E7 D
 Perfect;Ed Sheeran;0;1;G Em C D / G Em C G D G Em C D / 4x(Em C G D) G
 Picture Of You;Boyzone;0;0;C Em Gm F C Em F Dm G / Am Em F G / C Em Bb F C Em Bb F G
 Pompeii;Bastille;0;0;D A F#m E / D A F#m E / 2x(D A F#m E) 2x(D A E)
@@ -119,6 +122,7 @@ The Way You Make Me Feel;Michael Jackson;-6;0;8x(A# G#) 3x(D# C#) D# F 4x(A# G#)
 This Is Me;Demi Lovato, Joe Jonas;-6;0;4x(Em C G D) C D / C G D Em C G D C G Em D Am C D 2x(Em C G D) / 2x(C G D Em C G Em D)
 This Is The Last Time;Keane;0;0;G Bm C G / Em7 Bm Am D / 2x(G Bm Am D) Em7 Bm Am D Em7 Bm Am
 Time After Time;Cyndi Lauper;-5;0;8x(Am G) C 3x(D Bm C) D / D Em7 Cadd9 D G / C 3x(D Bm C)
+Title;Artist;Transposition;Capo;Chords
 Torn;Natalie Imbruglia;-5;0;C Em F / Am G Em G / C G Am F / Am G F Am C G
 Tuyo;Rodrigo Amarante;3;0;2x(Em Am B7 Em) E7 Am D7 G C Am B7 2xEm 2xAm 2xB7 2xC 2xB7 Em B7 2xEm
 Un Mundo Ideal;Ricardo Montaner;7;0;3xA F#m E D E7 F#m D A / 2x(E A) 3x(D A) E7 / 3xC Am G Fm G7 Am F C / G C G F C 4x(F C) / 2x(G# C#) 3x(F# C#) A
@@ -126,6 +130,7 @@ Universe And U (Acoustic);KT Tunstall;-7;0;G Gmaj7 G7 C Cm G A7 C / Em D C G Em 
 Valerie;Mark Ronson feat. Amy Whinehouse;-2;0;C#maj7 D#m7 / 3x(F#maj7 Fm7) G# 2x(C#maj7 D#m7)
 Versace On The Floor;Bruno Mars;-5;0;2x(A C#m7 Dmaj7 F#m7 E) Em7 F# Dmaj7 Dm Bm7 F#m7 E / Dmaj7 E F#m Em7 A Dmaj7 C#m7 Bm7 C#m7 Dmaj7 E / 2x(A C#m7 Dmaj7 E)
 Walking Away;Craig David;0;0;Am Dm F G
+Warriors;Imagine Dragons;5;0;Am G F E7 / Am C F E7
 We Belong Together;Mariah Carey;-5;0;Cmaj7 D Bm7 Cmaj7
 Whats Love Got To Do With It;Tina Turner;-4;0;2x(Em7 D) 3x(C D) / 4x(G D C D) / 2x(G A) F G Em7 A / 4x(A E D E)
 When The Sun Goes Down;Arctic Monkeys;0;0;B D#7 2x(Emaj7 D#m) C#m [F# E D#m C#m D#m] / 3x(G#m D#m) C#m D#m E F# 2x(4xBm [G F#]) / G F# 2xBm / 4x(Em F#m 2xBm) A F#

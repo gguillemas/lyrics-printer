@@ -13,7 +13,7 @@ skip=2
 while getopts 'hds:' flag; do 
   case ${flag} in
     d) dry=1 ;;
-    s) skip=${OPTARG}; echo "Skipping first $skip songs." ;;
+    s) skip=${OPTARG};;
     h) usage; exit 0 ;;
     ?) usage; exit 1 ;;
   esac
@@ -22,12 +22,21 @@ done
 shift $(($OPTIND - 1))
 remaining_args="$@"
 
-input="$1"
-output="$2"
+if [[ $# -ne 2 || $dry -eq 1 && $# -eq 1 ]]; then
+  usage
+  exit 1
+fi
 
-echo "Reading from \"$input\" and writing to \"$output\"."
+if [[ $skip -ne 2 ]]; then
+  echo "Skipping first $skip songs."
+fi
 
-tail -n +$(($skip + 2)) "$input" | {
+input_file="$1"
+output_dir="$2"
+
+echo "Reading from \"$input_file\" and writing to \"$output_dir\"."
+
+tail -n +$(($skip + 2)) "$input_file" | {
 while IFS= read -r line; do
   song="$(echo $line | cut -f1 -d ';')"
   artist="$(echo $line | cut -f2 -d ';')"
@@ -43,7 +52,7 @@ while IFS= read -r line; do
 	    --arg capo "$capo" \
 	    --arg transp "$transp" \
 	    --arg chords "$chords" \
-	    '. + {capo: $capo, transp: $transp, chords: $chords}' > $output/$lyrics
+	    '. + {capo: $capo, transp: $transp, chords: $chords}' > $output_dir/$lyrics
     rm $lyrics
   fi
 done || echo "Error downloading \"$song\" by $artist!" 
