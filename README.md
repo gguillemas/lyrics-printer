@@ -1,6 +1,6 @@
 # Lyrics Printer
 
-Lyrics Printer is a set of scripts to download and format song lyrics with chords in print for practice and performance.
+Lyrics Printer is a set of scripts to **download and format song lyrics with chords** in print for practice and performance.
 
 The expected input is a semicolon-separated CSV file containing song title, artist, transposition, capo position and chords. A sample `songlist.csv` file is supplied for convenience. Running the scripts as shown below will result in a **single PDF file containing lyrics for each song along with the supplied chords** and performance information.
 
